@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Feedback</title>
+  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+
+  <div class="wrapper">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+
+      <div class="content">
+      <div class="logo"><a href="#">IndigiNews</a></div>
+
+        <ul class="links">
+          <li><a href="about.html">About Us</a></li>
+
+          <li><a href="#">Application</a></li>
+
+          <li>
+            <a href="donation.html" class="desktop-link">Donation</a>
+            <input type="checkbox" id="show-services">
+            <label for="show-services">Donation</label>
+
+            <ul>
+              <li><a href="#">Charity 1</a></li>
+              <li><a href="#">Charity 2</a></li>
+              <li><a href="#">Charity 3</a></li>
+
+              <li>
+                <a href="#" class="desktop-link">More Items</a>
+                <input type="checkbox" id="show-items">
+                <label for="show-items">More Items</label>
+                <ul>
+                  <li><a href="#">Sub Menu 1</a></li>
+                  <li><a href="#">Sub Menu 2</a></li>
+                  <li><a href="#">Sub Menu 3</a></li>
+                </ul>
+
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+      <form action="#" class="search-box">
+        <input type="text" placeholder="Type Something to Search..." required>
+        <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+      </form>
+    </nav>
+  </div>
+
+  <section></section>
+
+  <div class="container">  
+    <form id="suggestion_box" action="" method="post">
+      <h3>Suggestion and Feedback box</h3>
+      <p>How can we improve our website?</p>
+      <h5>Or what general improvement ideas would you want us to know?</h5>
+      <fieldset>
+        <textarea placeholder="Suggestion" tabindex="5" name="suggestion_text" required></textarea>
+      </fieldset>
+      <fieldset>
+        <button name="submit" type="submit" id="suggestion_box" data-submit="...Sending" value="text to send">Submit</button>
+      </fieldset>
+    </form>
+  </div>
+
+</body>
+</html>
